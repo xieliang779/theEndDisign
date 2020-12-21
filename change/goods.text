@@ -1,0 +1,18 @@
+<div class="goods">
+    <!-- 商品图片 -->
+    <div class="goods-img">
+        <img src="./upload/this-month-a-02.webp" alt="">
+    </div>
+    <!-- 商品类型 -->
+    <div class="goods-type">LEIXING</div>
+    <!-- 商品信息 -->
+    <div class="goods-info">男式雪地徒步摇粒/羊羔绒夹克-灰白丨SH500 U-Warm</div>
+    <!-- 新品 -->
+    <div class="goods-news">
+        新品
+    </div>
+    <!-- 价格 -->
+    <div class="goods-price">
+        ￥200
+    </div>
+</div>

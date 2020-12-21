@@ -1,0 +1,294 @@
+/* 版心 */
+
+.w {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+
+/* 左浮动 */
+
+.fll {
+    float: left;
+}
+
+.flr {
+    float: right;
+}
+
+
+/* 新品 */
+
+
+/* sales-top 顶部促销活动start */
+
+.sales-top {
+    height: 37px;
+    line-height: 37px;
+    text-align: center;
+    background-color: #323233;
+    color: #fff;
+}
+
+.sales-top a {
+    color: #fff;
+}
+
+.sales-top span {
+    font-size: 20px;
+    float: right;
+}
+
+
+/* sales-top 顶部促销活动end */
+
+
+/* header-supper-nav 顶部导航模块start */
+
+.header-supper-nav {
+    height: 54px;
+    line-height: 54px;
+    border: 1px solid #000;
+    display: flex;
+}
+
+
+/* 菜单模块 */
+
+.header-supper-nav-menu {
+    width: 130px;
+    height: 100%;
+    border-left: #0082c3 solid 2px;
+    color: #575859;
+    text-align: left;
+    background-color: #edeff1;
+}
+
+.header-supper-nav-menu>div {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(60deg, transparent 85px, #fff 0) top right;
+}
+
+
+/* logo模块 */
+
+.logo a {
+    display: inline-block;
+    width: 100px;
+    height: 34px;
+    transform: translate(-24px, 30%);
+    text-indent: -99999px;
+    background: #009afabc url(../images/logo.png) no-repeat 8px 0px;
+    background-size: contain;
+    border: 2px solid#0082c3;
+    border-radius: 5px;
+}
+
+
+/* 搜索模块 */
+
+.header-supper-nav-search {
+    width: 1200px;
+    height: 54px;
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.header-supper-nav-search [type='text'] {
+    height: 35px;
+    flex: 1;
+    padding-left: 10px;
+    background-color: #edeff1;
+}
+
+.header-supper-nav-search [type='button'] {
+    height: 35px;
+    width: 58px;
+    transform: skew(10deg);
+    margin-left: -10px;
+}
+
+
+/* 小导航模块 */
+
+.header-supper-nav-small {
+    width: 250px;
+    height: 54px;
+    margin-left: 10px;
+}
+
+.header-supper-nav-small .nav-list {
+    display: flex;
+}
+
+.header-supper-nav-small .nav-list li {
+    position: relative;
+    width: 84px;
+    height: 54px;
+}
+
+.header-supper-nav-small .nav-list li::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 52px;
+    border-left: 1px solid #ccc;
+    transform: skewX(10deg) translateZ(0);
+    cursor: pointer;
+}
+
+.header-supper-nav-small .nav-list li a {
+    margin-left: 29px;
+}
+
+
+/* 购物车模块 */
+
+.header-supper-nav-buycar {
+    position: relative;
+    width: 90px;
+    padding-left: 10px;
+    background-color: #ffea28;
+}
+
+.header-supper-nav-buycar::before {
+    position: absolute;
+    top: 0;
+    left: -4px;
+    content: '';
+    width: 10%;
+    height: 52px;
+    transform: skewX(10deg) translateZ(0);
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.header-supper-nav-buycar a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* header-supper-nav 顶部导航模块end */
+
+
+/* footer模块 start */
+
+.footer {
+    margin-top: 100px;
+}
+
+
+/* 服务模块 */
+
+.footer_service_model {
+    height: 75px;
+    background-color: #0082c3;
+}
+
+.footer_service_model ul {
+    display: flex;
+    height: 75px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer_service_model ul li {
+    width: 224px;
+}
+
+.footer_service_model ul li a {
+    display: block;
+    height: 35px;
+    line-height: 35px;
+    background-color: #f99;
+}
+
+
+/* 帮助模块 */
+
+.footer_help {
+    overflow: hidden;
+}
+
+.footer_help dl {
+    float: left;
+    margin-right: 125px;
+    margin: 40px 125px 40px 0;
+}
+
+.footer_help dl dt {
+    color: #0082c3;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.footer_help dl:last-child {
+    width: 100px;
+    height: 100px;
+}
+
+.footer_help dl:last-child dd {
+    text-align: center;
+    font-weight: 700;
+}
+
+.footer_help dl:last-child img {
+    width: 100%;
+}
+
+
+/* 版权模块 */
+
+.copyRight {
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+
+/* footer模块 end */
+
+
+/* 返回顶部模块start */
+
+.goTop {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-bottom: 100px solid #0082c3;
+    border-left: 100px solid transparent;
+    cursor: pointer;
+}
+
+.goTop::after {
+    position: absolute;
+    top: 66px;
+    right: 20px;
+    content: 'TOP';
+    color: #fff;
+    animation: gotop infinite 1.5s backwards;
+}
+
+
+/* 动画 */
+
+@keyframes gotop {
+    0% {
+        transform: translate(0, 3px);
+        opacity: 0;
+    }
+    100% {
+        transform: translate(0, -3px);
+        opacity: 1;
+    }
+}
+
+
+/* 返回顶部模块end */

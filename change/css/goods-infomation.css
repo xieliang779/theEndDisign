@@ -1,0 +1,52 @@
+/* 新品 */
+
+.goods {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.goods-news {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 45px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    transform: rotate(-10deg);
+    color: rgb(255, 255, 255);
+    background-color: rgb(129, 38, 163);
+    font-size: 14px;
+}
+
+.goods-type {
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+
+/* 价格 */
+
+.goods-price {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    padding: 10px 15px;
+    background-color: #ffea28;
+    font-weight: 700;
+}
+
+.see-all-sports {
+    margin-top: 10px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    width: 400px;
+    height: 45px;
+    margin-bottom: 65px;
+    background-color: #0082c3;
+    text-align: center;
+    line-height: 45px;
+    color: #fff;
+}

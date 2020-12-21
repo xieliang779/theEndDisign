@@ -1,0 +1,423 @@
+/* banner 轮播图模块start */
+
+.banner {
+    max-width: 1920px;
+    width: 100%;
+    margin: 0 auto;
+    height: 590px;
+    background-color: #f00;
+}
+
+.swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    background-color: rgba(0, 136, 248, 0.9);
+}
+
+
+/* banner 轮播图模块end */
+
+
+/* sports-type 运动分类模块start */
+
+.sports-type {
+    margin-top: 105px;
+}
+
+.sports-type-header {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.sports-type .sports-main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+/* 大类别 */
+
+.sports-main .type-sport {
+    width: 200px;
+    height: 252px;
+    /* border: 1px solid #000; */
+}
+
+.xl-sport {
+    display: block;
+    text-align: center;
+    overflow: hidden;
+}
+
+.xl-sport p {
+    margin-top: 20px;
+}
+
+
+/* 小类别 */
+
+.xl-category {
+    height: 0;
+    overflow: hidden;
+    text-align: center;
+    transition: all .8s;
+}
+
+.xl-category li {
+    height: 28px;
+    line-height: 28px;
+}
+
+.xl-category-title {
+    position: relative;
+    font-size: 20px;
+    margin-bottom: 18px;
+}
+
+.xl-category li:nth-child(n+2)::after {
+    display: none;
+    content: '>';
+    float: right;
+    color: #ccc;
+}
+
+.xl-category-title::after {
+    position: absolute;
+    top: 26px;
+    left: 89px;
+    content: '';
+    width: 20px;
+    height: 3px;
+    background-color: #0082c3;
+}
+
+
+/* 特效 */
+
+.type-sport:hover {
+    background-color: #fafafa;
+}
+
+.type-sport:hover .xl-category {
+    height: 100%;
+}
+
+.type-sport:hover .xl-sport {
+    height: 0;
+}
+
+.xl-category li:nth-child(n+2):hover {
+    background-color: rgba(255, 255, 255, .8);
+}
+
+.xl-category li:nth-child(n+2):hover::after {
+    display: block;
+}
+
+
+/* sports-type 运动分类模块end */
+
+
+/* benefits 优惠模块start */
+
+.benefits {
+    height: 170px;
+    padding: 20px 0;
+    background-color: #f2f2f2;
+}
+
+.benefits-1 {
+    float: left;
+    margin-right: 10px;
+}
+
+
+/* benefits 优惠模块end */
+
+
+/*  floor楼层区域start  */
+
+
+/* 楼层标题 */
+
+.floor-header {
+    font-size: 40px;
+    margin: 30px auto;
+    line-height: 1;
+    font-weight: 700;
+    text-align: center;
+    color: #232323;
+}
+
+
+/* -----------本月主推层---------------- */
+
+.month-tab {
+    position: relative;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+/* tab 栏 */
+
+.month-tab>div {
+    font-size: 22px;
+    color: #232323;
+    display: inline-block;
+    padding: 0 35px;
+    position: relative;
+    cursor: pointer;
+}
+
+.month-move {
+    position: absolute;
+    left: 354px;
+    bottom: -10px;
+    width: 20px;
+    height: 5px;
+    border-radius: 2px;
+    background-color: #0082c3;
+}
+
+
+/* 切换内容  */
+
+.month-toggle {
+    overflow: hidden;
+}
+
+.toggle-pic {
+    overflow: hidden;
+}
+
+.month-toggle .fll p {
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 1.5;
+    color: #232323;
+}
+
+.month-toggle .content {
+    margin-left: 55px;
+}
+
+.month-toggle .fll h2 {
+    font-size: 72px;
+    font-weight: 700;
+    line-height: 1;
+    color: #232323;
+    white-space: nowrap;
+}
+
+.month-toggle .fll span {
+    display: block;
+    width: 186px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    margin-top: 40px;
+    background-color: #fee843;
+    cursor: pointer;
+}
+
+
+/* 轮播图 */
+
+.show-list {
+    width: 100%;
+    height: 380px;
+}
+
+.show-list .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.show-list .goods {
+    width: 285px;
+    height: 344px;
+    border: 1px solid #ccc;
+    padding: 0 20px;
+}
+
+
+/* -----------------完美搭配层---------------- */
+
+.perfect-together .inner {
+    overflow: hidden;
+    margin-bottom: 56px;
+}
+
+.perfect-together .inner .fll a {
+    display: block;
+    height: 100%;
+}
+
+.perfect-together .inner .fll img {
+    width: 100%;
+}
+
+.perfect-together .inner .fll:nth-child(1) {
+    width: 360px;
+    height: 590px;
+}
+
+.perfect-together .inner .fll:nth-child(n+2) {
+    width: 392px;
+    height: 287px;
+    margin-left: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #eee;
+}
+
+.perfect-together .inner .goods {
+    margin-left: 12px;
+}
+
+.perfect-together .inner .goods-img {
+    width: 200px;
+    margin: 0 auto;
+}
+
+
+/* ----------------猜你喜欢层----------------- */
+
+.like-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.like-list>a {
+    width: 284px;
+    height: 253px;
+    margin: 5px;
+    border: 1px solid #eee;
+}
+
+.like-list .goods-img {
+    width: 170px;
+    height: 170px;
+    margin: 0 auto;
+}
+
+.like-list .goods-img img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* 喜欢分类 */
+
+.like-type {
+    overflow: hidden;
+}
+
+.like-type>a {
+    float: left;
+    width: 585px;
+    height: 200px;
+    margin: 5px;
+    border: 1px solid #000;
+}
+
+
+/* ----------------创新产品层----------------- */
+
+.cx-product {
+    margin: 100px 0;
+}
+
+
+/* Swiper */
+
+.product-list a {
+    display: block;
+    width: 585px;
+    height: 390px;
+}
+
+.product-list a img {
+    width: 100%;
+}
+
+
+/* 产品召回 */
+
+.product-recall {
+    margin-top: 50px;
+}
+
+.product-recall h3 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.product-recall a {
+    display: inline-block;
+    width: 382px;
+    height: 164px;
+    margin-right: 10px;
+    border: 1px solid #eee;
+}
+
+.recall-text {
+    padding: 10px;
+}
+
+.recall-img {
+    width: 80px;
+    height: 80px;
+    margin-right: 15PX;
+}
+
+.recall-img img {
+    width: 100%;
+}
+
+.recall-type {
+    color: #f00;
+    font-weight: 700;
+}
+
+.recall-title {
+    color: #000000;
+    font-weight: 700;
+}
+
+.recall-desc {
+    font-size: 12px;
+}
+
+.recall-button {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.recall-button span {
+    display: inline-block;
+    width: 130px;
+    height: 30px;
+    line-height: 30px;
+    color: #fff;
+    background-color: #0082c3;
+}
+
+
+/*  floor楼层区域end  */
